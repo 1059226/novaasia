@@ -20,7 +20,7 @@ func routerHandler(router *mux.Router) http.HandlerFunc {
 }
 
 func IndexHandler(res http.ResponseWriter, req *http.Request) {
-    data, _ := json.Marshal("{'hello':'wercker!'}")
+    data, _ := json.Marshal("{'hello':'AUT R&D Fellows'}")
     res.Header().Set("Content-Type", "application/json; charset=utf-8")
     res.Write(data)
 }
