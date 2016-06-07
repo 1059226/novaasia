@@ -4,6 +4,11 @@ build:
     - setup-go-workspace
     - wercker/golint
     - script:
+        name: go get
+        code: |
+          cd $WERCKER_SOURCE_DIR
+          go get ./...
+    - script:
         name: go build
         code: |
           go build ./...
